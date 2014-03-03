@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+</head>
+<body>
+    <div>
+        <b class="carlos">@ViewBag.Greeting Amigo</b>(From the View)
+        <p class="carlos">Vamos a tener una fiesta increible <br /> 
+            (To do: Mejorar redaccion, Agregar fotos o algo.)</p>
+        @Html.ActionLink("RSVP Ahora", "RsvpForm");
+    </div>
+</body>
+</html>

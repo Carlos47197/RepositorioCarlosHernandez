@@ -1,0 +1,37 @@
+﻿@model pk2_RSVPwapp.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+</head>
+<body>
+    
+    @using (Html.BeginForm())
+    {
+        <p> Tu nombre: @Html.TextBoxFor(x=> x.Name)</p>
+        <p> Tu correo electronico: @Html.TextBoxFor(x=> x.Email)</p>
+        <p> Tu telefono: @Html.TextBoxFor(x=> x.Phone)</p>
+        <p>
+            ¿Asistiras a la fiesta?
+            @Html.DropDownListFor(x=> x.WillAttend,new[]
+       {
+           new SelectListItem(){Text="Si, Ahi estare",Value=bool.TrueString},
+           new SelectListItem(){Text="No, no podre asistir",Value=bool.FalseString}           
+       },
+       "Escoje una opcion")
+
+        </p>
+        <input type="submit" value="Submit RSVP" />
+        
+        
+    }   
+    
+</body>
+</html>

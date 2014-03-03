@@ -1,0 +1,41 @@
+﻿.field-validation-error {
+    color: #f00;
+}
+.field-validation-valid {
+    display: none;
+}
+.input-validation-error {
+    border: 2px solid #f00;
+    background-color: #4cff00;
+}
+.validation-summary-errors {
+    font-weight: bold;
+    color: #4800ff;
+}
+.validation-summary-valid {
+    display: none;
+}
+.carlos{
+    font-family:'Times New Roman';
+    font-weight:bold;
+    font-size:medium;
+    color:green;
+    
+    
+    display: block;
+    width: 200px;
+    margin-bottom: 10px;
+
+}
+.boton {
+
+   color:purple;
+   border-bottom-color:aqua;
+}
+
+
+table { 
+    
+    border: red 3px inset; 
+
+}

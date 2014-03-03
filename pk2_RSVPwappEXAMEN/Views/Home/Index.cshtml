@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+</head>
+<body>
+
+    <center>
+<div id="principal" class="principal">
+	<div id="logo" class="logo">
+    	<center>
+    	  
+    	</center>
+    </div>
+    
+    
+  	<p></p>
+    
+  	<div id="contenido" class="contenido">
+    
+           <b class="index">@ViewBag.Greeting Amigo   (From the View)</b>
+        <p class="index">Vamos a tener una fiesta increible <br /> 
+            (To do: Mejorar redaccion, Agregar fotos o algo.)</p>
+        @Html.ActionLink("RSVP Ahora", "RsvpForm");
+
+    </div>
+
+</div>
+</center>
+
+       
+   
+</body>
+</html>
